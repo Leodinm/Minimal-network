@@ -13,14 +13,15 @@ namespace Minimal_network
     class Program
     {
 		
-		static void Main(string[] args)
+     static void Main(string[] args)
         {
+
             
-            NetworkKruskal mynet = new NetworkKruskal();
+             NetworkKruskal mynet = new NetworkKruskal();
 
-            var kurskalGraph = mynet.Netwrok();
+             var kurskalGraph = mynet.Netwrok();
 
-            int Edges = 0;
+             int Edges = 0;
 
             for (int i = 0; i <= kurskalGraph.Length - 1; i++)
                 for (int j = i+1; j <= kurskalGraph.Length - 1; j++)
@@ -30,7 +31,7 @@ namespace Minimal_network
                 }
 
 
-             Graph graph = new Graph(kurskalGraph.Length, Edges);
+                Graph graph = new Graph(kurskalGraph.Length, Edges);
 
 
             int k = 0;
@@ -46,6 +47,7 @@ namespace Minimal_network
                         k++;
                     }
                 }
+
 
             graph.KruskalMST();
 
