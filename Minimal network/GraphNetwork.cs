@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Minimal_network
 {
     
-    class NetworkKruskal
+    class GraphNetwork
     {
 
         public int[][] Netwrok()
